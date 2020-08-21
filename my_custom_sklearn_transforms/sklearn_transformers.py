@@ -17,8 +17,6 @@ class DropColumns(BaseEstimator, TransformerMixin):
     
 def feature_engineering( df ):
     
-    n_data = len( df.index )
-    
     MF = df["NOTA_MF"].values
     DE = df["NOTA_DE"].values
     EM = df["NOTA_EM"].values
