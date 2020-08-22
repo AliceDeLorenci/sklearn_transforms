@@ -27,8 +27,6 @@ def my_mean_imputer( df, column, mean ):
     n_data = len( data )
 
     find_nan = np.isnan( data )
-    
-    mean = np.nanmean( data )
 
     corrected = [ mean if find_nan[i] else data[i] for i in range(n_data) ]
     
